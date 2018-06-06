@@ -5,8 +5,6 @@ init();
 
 document.querySelector('.btn-roll').addEventListener('click', function(){
 	if(gamePlaying) {
-		if(scores[activePlayer])
-
 		// get a random number
 		var dice = Math.floor(Math.random()*6) + 1;
 
@@ -65,10 +63,10 @@ function init(){
 	activePlayer = 0;
 	gamePlaying = true;
 
-	document.querySelector(".current-0").textContent = 0;
-	document.querySelector(".current-1").textContent = 0;
-	document.querySelector(".score-0").textContent = 0;
-	document.querySelector(".score-1").textContent = 0;
+	document.querySelector("#current-0").textContent = 0;
+	document.querySelector("#current-1").textContent = 0;
+	document.querySelector("#score-0").textContent = 0;
+	document.querySelector("#score-1").textContent = 0;
 
 	// dice should be hidden
 	document.querySelector(".dice").style.display = "none";
